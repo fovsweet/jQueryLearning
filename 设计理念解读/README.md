@@ -124,4 +124,8 @@ console.log(fov().name()) //20
 ```
 可能到这一步，大部分码农和我一样有点懵逼，为哈这么写？
 在这里我很没良心的百度了一张网友的图片来解释一下下。。
+
 ![webpack](http://dl.iteye.com/upload/attachment/0073/2601/3fc8106d-6afd-314c-a6bf-a64157145e67.jpg)
+
+> 这里的fn解释下，其实这个fn没有什么特殊意思，只是jQuery.prototype的引用，也就是我们在进行jQuery拓展的时候经常用的$.fn.extend({...})
+
