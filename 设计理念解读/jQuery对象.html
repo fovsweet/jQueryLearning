@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery对象</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var fov = function(){
+		//构造函数
+	}
+
+	fov.prototype = {
+		name:function(){
+			return 'FovSweet'
+		},
+		age:function(){
+			return '这是秘密！'
+		}
+	}
+
+	var a = new fov();	//fov{}_Object
+	console.log(a.name());	//FovSweet
+</script>
+</html>
