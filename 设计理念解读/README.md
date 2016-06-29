@@ -124,6 +124,4 @@ console.log(fov().name()) //20
 ```
 可能到这一步，大部分码农和我一样有点懵逼，为哈这么写？
 在这里我很没良心的百度了一张网友的图片来解释一下下。。
-![webpack](prototype.jpg)
-
-[https://github.com/webpack/webpack](https://github.com/webpack/webpack)
+![webpack](http://dl.iteye.com/upload/attachment/0073/2601/3fc8106d-6afd-314c-a6bf-a64157145e67.jpg)
