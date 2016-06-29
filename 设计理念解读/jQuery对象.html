@@ -8,20 +8,58 @@
 
 </body>
 <script type="text/javascript">
-	var fov = function(){
-		//构造函数
-	}
+	// var fov = function(){
+	// 	//构造函数
+	// 	return fov.prototype.init()
+	// }
 
-	fov.prototype = {
-		name:function(){
-			return 'FovSweet'
-		},
-		age:function(){
-			return '这是秘密！'
-		}
-	}
+	// fov.prototype = {
+	// 	init:function(){
+	// 		this.age = 18;
+	// 		return this;
+	// 	},
+	// 	name:function(){
+	// 		return 'FovSweet'
+	// 	},
+	// 	age:10000
+	// }
 
-	var a = new fov();	//fov{}_Object
-	console.log(a.name());	//FovSweet
+	// // var a = new fov();	//fov{}_Object
+	// // console.log(a.name());	//FovSweet
+
+	// console.log(fov().age)	//18
+/*第二种尝试*/
+	// var fov = function(selector , context){
+	// 	retrun new fov.prototype.init();
+	// }
+	// fov.prototype = {
+	// 	init:function(){
+	// 		this.age = 18
+	// 		return this
+	// 	},
+	// 	name:'FovSweet',
+	// 	age:20
+	// }
+
+	// console.log(fov().name())	//Uncaught SyntaxError: Unexpected token new
+
+/*第三种尝试*/
+var fov = function(selector, context) {
+	return  new fov.prototype.init();
+}
+fov.prototype = {
+    init: function() {
+        return this;
+    },
+    name: function() {
+        return this.age
+    },
+    age: 20
+}
+
+fov.prototype.init.prototype = fov.prototype;
+
+console.log(fov().name()) //20
+
 </script>
 </html>
