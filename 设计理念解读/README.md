@@ -158,3 +158,4 @@ a.name();
 > 然而这个方法比较糟糕的地方就是没有返回值，所以链式调用不适用于任何环境，只能按需使用
 
 针对于`JavaScript`的非阻塞原理，jQuery在后面的1.5版本引入了`Deferred`对象，后面再说这个问题。
+感兴趣的朋友可以参考一下[阮一峰的deferred](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)讲解
